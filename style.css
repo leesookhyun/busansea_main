@@ -1,0 +1,473 @@
+@font-face {
+    font-family: 'Godo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+   }
+   
+   @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+   }
+   
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+body{
+    font-family: 'Godo';
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+.header_inner{
+    width: 1320px;
+    height: 150px;
+    margin: 30px auto 0;
+    position: relative;
+    
+}
+.logo{
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+}
+.header_inner ul{
+    position: absolute;
+    right: 150px;
+    top: 90px;
+}
+.header_inner ul li{
+    
+    float: left; 
+    padding-left: 30px;
+   
+}
+.header_inner a{
+    color: #333;
+    font-size: 20px;
+}
+.nav{
+    width: 1320px;
+    height: 74px;
+    margin: auto;
+
+}
+.nav> ul> li{
+    float: left;
+    width: 330px;
+    text-align: center;
+}
+
+.nav> ul> li> a{
+    font-size: 25px;
+    font-weight: bold;
+    color: #004080;
+    display: block;
+    padding: 30px 0 20px;
+}
+.nav>ul> li> a:hover, .nav>ul>.active> a{
+    color: palevioletred;
+    background: url(images/icon3.jpg)no-repeat 55px top;
+    background-size: 70px;
+}
+.sub{
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    display: none;/*서브메뉴 안보이게 만들기*/
+  }
+  .sub div{
+    width: 1320px;
+    height: 250px;
+    
+    margin: auto;
+  }
+  .sub ul{
+    float: left;
+   width: 330px;
+    font-weight: bold;
+  }
+  .sub ul li {
+      font-family: 'Godo';
+      font-size: 18px;
+      margin: 10px;
+      
+  }
+  .sub ul li a:hover{
+      color: #004080;
+  }
+  .sub a{
+      color: #78b3d1;
+  }
+
+ 
+.mainbanner{
+    background: url(images/banner1.jpg) no-repeat center;
+    height: 815px;
+    animation: img 12s infinite;
+
+}
+@keyframes img{
+    0%{background: url(images/banner1.jpg) no-repeat center;}
+    15%{background: url(images/banner2.jpg) no-repeat center;}
+    30%{background: url(images/banner3.jpg) no-repeat center;}
+    45%{background: url(images/banner4.jpg) no-repeat center;}
+    60%{background: url(images/banner5.jpg) no-repeat center;}
+    75%{background: url(images/banner6.jpg) no-repeat center;}
+    90%{background: url(images/banner7.jpg) no-repeat center;}
+    100%{background: url(images/banner1.jpg) no-repeat center;}
+}
+#content{
+    
+    height: 3500px;
+    margin:20px auto;
+    background: url(images/bg1.png) no-repeat center 150px;
+}
+.content1{
+    width: 1320px;
+    height: 1100px;
+    margin:  auto;
+    position: relative;
+    
+}
+.content1 p{
+    font-size: 18px;
+    color: #666;
+}
+h1{
+    color: #48aee9;
+    padding: 30px 0;
+}
+h2 a{
+    font-size: 40px;
+    color: #fff;
+}
+.content_a{
+    position: absolute;
+    top: 250px;
+    right: 473px;
+   
+}
+.content_a div{
+    overflow: hidden;
+}
+.content_aa{
+    width: 429px;
+    padding: 100px 0;
+    background-color: #005580;
+    background-position: left center;
+    text-align: center ;
+    transition: all 1s;
+}
+.content_b{
+    position: absolute;
+    top: 150px;
+    right: 50px;
+  
+}
+.content_b div{
+      overflow: hidden;
+}
+.content_bb{
+    width: 423spx;
+    padding: 100px 0;
+    background-color: #48aee9;
+    background-position: left center;
+    text-align: center ;
+    transition: all 1s;
+}
+.content1 img{
+    display: block;
+    transition: all 1s;
+}
+.content_a:hover .content_aa{
+    background: url(images/road.png) no-repeat center center #005580;
+    
+}
+.content_b:hover .content_bb{
+    background: url(images/goods.png) no-repeat center center #48aee9;
+}
+
+.content_a:hover img{
+    transform: scale(1.2);
+}
+.content_b:hover img{
+    transform: scale(1.2);
+}
+.content2{
+    width: 1320px;
+    height: 900px;
+    margin: auto;
+}
+.content2_left{
+    width: 300px;
+    height: 590px;
+    background: url(images/br.png) no-repeat center 95% #48aee9;
+    float: left;
+   
+}
+.content2_left div{
+    width: 240px;
+    height: 1px;
+    background-color: #fff;
+    margin: auto;
+}
+h2{
+    font-size: 25px;
+    padding: 30px;
+    color: #fff;
+   
+
+   
+}
+h3{
+    padding: 20px 0 5px 30px;
+    color: #fff;
+}
+h2:hover{
+    color: pink;
+}
+h3:hover{
+    color: pink;
+}
+.content2_right{
+    width: 900px;
+    float: right;
+}
+.r li{
+    width: 265px;
+    height: 274px;
+    border: 1px solid #48aee9 ;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 30px 40px 0;
+    box-shadow: 10px 10px 0px #004080;
+    transition: all 0.5s;
+}
+.r li:hover{
+    box-shadow: 0 0 0;
+}
+.r img{
+    display: block;
+    width: 100%;
+}
+.content2_right li div{
+    padding: 4px;
+}
+h4{
+    font-size: 20px;
+    padding: 10px;
+    color: #48aee9 ;
+    
+}
+.r p{
+    padding-left: 10px;
+    color: #666;
+}
+.content3{
+    width: 1320px;
+    height: 800px;
+    margin: auto;
+}
+.content3_left{
+    width: 600px;
+    height: 530px;
+    float: left;
+}
+.content3_left p{
+    font-size: 18px;
+    color: #666;
+    padding-bottom: 100px;
+}
+.gd li{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+}
+.gd .or{
+    width: 360px;
+    height: 170px;
+}
+.black{
+    
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+.black p{
+    color: #fff;
+    padding: 120px 0 0 20px;
+}
+.gd li:hover .black{
+    transform:translateY(-170px);
+}
+.gd li:hover img{
+    transform: scale(1.1);
+}
+.gd li img{
+    display: block;
+    transition: all 1s;
+}
+.content3_right{
+     float: right;
+    margin-right:50px;
+}
+
+.content3_right1{
+    width: 620px;
+    height: 300px;
+    background-color: #005580;
+    text-align: center;
+}
+.content3_right1 .rr1{
+    font-family: 'yg-jalnan';
+    color: #fff;
+    font-size: 100px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+.content3_right1 a{
+    font-family: 'yg-jalnan';
+    font-size: 30px;
+    padding: 20px;
+    background-color: #48aee9;
+    color:#005580 ;
+    border-radius: 50px;
+    
+}
+.content3_right1 a:hover{
+    color: #48aee9;
+    background-color: #fff;
+}
+.content3_right2{
+    font-family: 'NanumBarunGothic', sans-serif;
+    width: 620px;
+    height: 400px;
+    background-color: #c1e6fd;
+    text-align: center;
+    margin-top: 53px;
+}
+
+.content3_right2 li{
+    float: left;
+    width: 166px;
+    height: 166px;
+    border-radius: 50%;
+    background-color: #005580;
+    color: #fff;
+    margin: 20px 20.33px;
+    box-sizing: border-box;
+    padding-top: 42px;
+}
+.content3_right2 .o{
+    font-size: 60px;
+    color: #005580;
+   padding: 40px 0;
+}
+.content3_right2 .oo{
+    color: #fff;
+    background-color: #48aee9;
+    margin: 0 70px;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+.content3_right2 span{
+    font-family: 'yg-jalnan';
+}
+.content3_right2 ul{
+  margin-top: 20px;
+}
+.content4{
+    width: 1320px;
+    height: 650px;
+    margin: auto;
+    text-align: center;
+    
+}
+.ev{
+    width: 1195px;
+    height: 625px;
+    margin-left: 60px;
+    background: url(images/event2.jpg);
+    position: relative;
+}
+.e{
+    padding-top: 130px;
+    padding-bottom: 10px;
+    font-family: 'yg-jalnan';
+}
+.e1{
+    padding-top: 5px;
+    font-family: 'yg-jalnan';
+}
+.e2{
+    color: #fff;
+    padding-top: 180px;
+}
+.ev img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -278px;
+    margin-left: -267px;
+}
+#footer{
+    background-color: #666;
+    margin-top: 70px;
+}
+.footer_inner{
+    width: 1320px;
+    height: 150px;
+    margin: auto;
+    padding-top: 20px;
+    color: #333;
+}
+.fl{
+    font-size: 30px;
+    color: #fff;
+    float: left;
+}
+.fr{
+    color: #fff;
+    float: right;
+}
+.fr span{
+    color: blue;
+}
+h5{
+    font-size: 14px;
+}
+.footer_inner p{
+    clear: both;
+    padding-top: 20px;
+}
